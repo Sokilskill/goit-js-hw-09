@@ -1,0 +1,196 @@
+/* Денис Муратов */
+.footer {
+  min-width: 290px;
+  padding: 40px 0 20px;
+  background-color: var(--dark-green-background);
+}
+
+.footer-container {
+  position: relative;
+}
+
+.logo-footer {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 40px;
+}
+.privacy-wrap {
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.nav-list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.nav-link-footer {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: var(--white-background);
+  letter-spacing: -0.02em;
+  transition: color 250ms var(--cubic-besier);
+}
+
+.nav-link-footer:is(:hover, :focus) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 80px;
+}
+
+.social-media .link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-background);
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.social-media .link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+
+.contact {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+}
+
+.contact-tel {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.contact-adr {
+  display: block;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  text-transform: none;
+}
+.copy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  opacity: 0.9;
+  margin-bottom: 14px;
+}
+
+.privacy-policy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  margin-right: 14px;
+}
+.privacy-service {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  margin-right: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 80px 0 20px;
+  }
+
+  .nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 250px;
+  }
+
+  .logo-footer {
+    margin-right: 267px;
+  }
+  .nav-link-footer {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .nav-footer {
+    justify-content: unset;
+    margin-bottom: 0;
+  }
+
+  .social-media a {
+    width: 44px;
+    height: 44px;
+  }
+  .contact {
+    top: 92px;
+  }
+
+  .contact-adr,
+  .contact-tel {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .copy {
+    font-size: 14px;
+    line-height: 1.29;
+    margin-bottom: 0px;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .privacy-policy,
+  .privacy-service {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .privacy-service {
+    margin-right: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+  .nav-wrap {
+    margin-bottom: 272px;
+  }
+
+  .logo-footer {
+    margin-right: 480px;
+  }
+
+  .nav-list-footer {
+    gap: 18px;
+  }
+  .contact {
+    top: 90px;
+  }
+}
