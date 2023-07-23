@@ -32,7 +32,7 @@ function onFormSubmit(event) {
   // const amount = parseInt(amountInput.value);
 
   createPromises(firstDelay, step, amount);
-  createPromi(firstDelay, step, amount);
+  // createPromi(firstDelay, step, amount);
 }
 
 function createPromises(firstDelay, step, amount) {
