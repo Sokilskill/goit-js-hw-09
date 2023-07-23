@@ -1,0 +1,18 @@
+.container {
+  max-width: 1020px;
+  height: 500px;
+  padding: 0 15;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+}
+button {
+  font-weight: 500;
+  font-size: 16px;
+  width: auto;
+  padding: 10 30;
+  border-radius: 4px;
+}

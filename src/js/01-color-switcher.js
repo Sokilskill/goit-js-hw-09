@@ -8,28 +8,28 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-let count = 0;
 let timeId = null;
+stopBtn.disabled = true;
 
 startBtn.addEventListener('click', onStartClick);
 
 function onStartClick() {
-  if (!count) {
+  body.style.backgroundColor = getRandomHexColor();
+
+  startBtn.disabled = true;
+  stopBtn.disabled = false;
+
+  timeId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
-    count += 1;
-    timeId = setInterval(() => {
-      body.style.backgroundColor = getRandomHexColor();
-    }, 1000);
-  }
+  }, 1000);
 }
 
 stopBtn.addEventListener('click', onStopClick);
 
 function onStopClick() {
-  if (count) {
-    clearTimeout(timeId);
-    count = 0;
-  }
+  startBtn.disabled = false;
+  stopBtn.disabled = true;
+  clearTimeout(timeId);
 }
 
 // console.log(count);
