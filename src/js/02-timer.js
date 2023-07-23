@@ -3,6 +3,8 @@ import flatpickr from 'flatpickr';
 // Додатковий імпорт стилів
 import 'flatpickr/dist/flatpickr.min.css';
 
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 flatpickr.l10ns.default.firstDayOfWeek = 1;
 
 const dateTimePicker = document.querySelector('#datetime-picker');
@@ -24,7 +26,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < new Date()) {
-      return alert('Please choose a date in the future');
+      return Notify.failure('Please choose a date in the future');
     }
 
     // dateTimePicker.value = '';
